@@ -5,8 +5,8 @@
         <div id="storageForm">
              <span>运单号：</span><input v-model="formMessege.orderNumber" placeholder="请输入运单号"><br/>
              <span>收件人：</span><input v-model="formMessege.name" placeholder="请输入收件人姓名"><br/>
-             <span>电话：</span><input v-model="formMessege.phone" placeholder="请输入收件人电话"><br/>
-             <span>重量：</span><input v-model="formMessege.weight" placeholder="请输入订单重量"><br/><br/>
+             <span>电  话：</span><input v-model="formMessege.phone" placeholder="请输入收件人电话"><br/>
+             <span>重  量：</span><input v-model="formMessege.weight" placeholder="请输入订单重量"><br/><br/>
         </div>
     </form>
     <div id="">

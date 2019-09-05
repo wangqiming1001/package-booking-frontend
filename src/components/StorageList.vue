@@ -1,5 +1,3 @@
-
-
    <template>
    <div>
        <div>
@@ -7,8 +5,8 @@
         <button @click="queryAll">ALL</button>
         <button @click="queryBooked">已预约</button>
         <button @click="queryReceived">已取件</button>
-        <button @click="queryUnbooked">未取件</button>
-        <button @click="toStoragePage">添加</button>
+        <button @click="queryUnbooked">未预约</button> 
+        <a-button type="primary" @click="toStoragePage">添加</a-button>
     </div>  
   <a-table :columns="columns" :dataSource="currentFilter" bordered>
     <template slot="name" slot-scope="text">
@@ -59,13 +57,23 @@ export default {
         },
     created:function(){
         this.$store.dispatch('queryStorageList');
-        // this.$store.state.storageListData = this.data;
-        // console.log(this.data);
     },
     methods:{
       toStoragePage:function(){
-        console.log(111111);
+        //console.log(111111);
         this.$router.push('/storageofparcels');
+      },
+      queryAll:function(){
+        
+      },
+      queryBooked:function(){
+        
+      },
+      queryReceived:function(){
+        
+      },
+      queryUnbooked:function(){
+        
       }
     }
 }
