@@ -32,6 +32,7 @@ export default {
         methods: {
             makeSure: function () {
                 this.$store.dispatch('addPackage',this.formMessege);
+                //this.$router.push('/storageList');
             }
         }
     }
