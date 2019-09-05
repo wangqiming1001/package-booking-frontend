@@ -10,8 +10,8 @@
         </div>
     </form>
     <div id="">
-            <button @click="makeSure">确定</button>
-            <button @click="callBack">返回</button>
+            <a-button type="primary" @click="makeSure">确定</a-button>
+            <a-button type="primary" @click="callBack">返回</a-button>
     </div>
   </div>
 </template>
