@@ -13,18 +13,11 @@ export default new Vuex.Store({
   },
   actions: {
       addPackage:function(store,formData){
-          const url = "**********";
-          axios({
-              method:"post",
-              url:"xxxxxxx",
-              headers: {
-              "Content-Type": "multipart/form-data"
-              },
-              withCredentials:true,
-              data:formData
-          }).then((res)=>{
-                console.log(res);
-          });
+            const urlStorage = "http://localhost:8080/storage";
+                axios.post(urlStorage,formData).then((res)=>{
+                        console.log(res);
+                });
+        },
       } 
-  }
+  
 })
